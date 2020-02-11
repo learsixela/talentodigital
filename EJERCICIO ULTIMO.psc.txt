@@ -1,0 +1,68 @@
+Algoritmo ejercicio2
+	definir frente, votacion, voto como caracter
+	definir totalVotantes como enteros 
+	frente='X'
+	Definir votoA, votoR, votoB,votoI,aprueban,rechazan,empate Como Entero
+	totalVotantes=0
+	
+	
+	votoA = 0
+	votoB = 0
+	votoI = 0
+	votoR = 0
+	aprueban =0
+	rechazan =0
+	empate =0
+
+	
+	
+	
+	//Repetir 
+		escribir 'ingrse nombre del frente'
+		leer frente
+		
+	//Hasta Que frente= 'X'
+	
+	Mientras frente!= 'X' Hacer
+		Escribir 'texto de votacion'
+		LEER votacion 
+		tamañoVoto=Longitud(votacion)
+		//escribir tamañoVoto
+		totalVotantes=totalVotantes+tamañoVoto
+		
+		Para i<-1 Hasta tamañoVoto Con Paso 1 Hacer
+			voto=SubCadena(votacion,i,i)
+			//Escribir voto
+			voto = Mayusculas(voto)
+			
+			Segun voto Hacer
+				'A':
+					votoA = votoA +1
+				'R':
+					votoR = votoA +1
+				
+					
+				
+					
+			
+					
+				De Otro Modo:
+					
+			Fin Segun
+			
+		Fin Para
+		
+		
+		
+		
+		
+		
+		escribir 'ingrse nombre del frente'
+		leer frente
+		frente= Mayusculas(frente)
+		Fin Mientras
+	
+	
+	
+	
+FinAlgoritmo
